@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int guess = 0;
+    
+    printf("Guess the number!\n");
+    
+    while (guess != 7) {
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        
+        if (guess > 7) {
+            printf("Too High\n");
+        } else if (guess < 7) {
+            printf("Too Low\n");
+        } else {
+            printf("Correct!\n");
+        }
+    }
+    return 0;
+}
